@@ -40,12 +40,12 @@ describe('Testa API', () => {
         failOnStatusCode: false,
         body: {
           'matricula': "0004",
-          "nome": "Ingrid"
+          "nome": "Val"
         }
       }).then((res) => {
         expect(res.status).to.eq(200)
         expect(res.body).to.have.property('matricula', '0004')
-        expect(res.body).to.have.property('nome', 'Ingrid')
+        expect(res.body).to.have.property('nome', 'Val')
       })
   
     })
